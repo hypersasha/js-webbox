@@ -69,7 +69,7 @@ Just look at example below.
 ```
 ```JavaScript
 // common.js
-var fp = new filePicker(true);
+var fp = new filePicker(true); // true - allow multiple file choose
 fp.onchange(uploadFile);
 
 function chooseFile() {
