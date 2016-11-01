@@ -6,7 +6,7 @@ Webbox JavaScript module. See original webbox [here](https://github.com/hypersas
 Current version of jsWebBox is 0.0.2 (Alpha)
 
 ## Installing
-You can add jsWebBox to your project, using script tag in your \<head>:
+You can add jsWebBox to your project, using \<script> tag in your \<head>:
 
 ```HTML
 <head>
@@ -14,6 +14,7 @@ You can add jsWebBox to your project, using script tag in your \<head>:
   <script type="text/javascript" src="https://raw.githubusercontent.com/hypersasha/js-webbox/master/webbox-uncopressed.0.2.js"></script>
 </head>
 ```
+Or just download compressed or uncompressed version from this repository.
 
 ## Sending POST/GET-requests
 Before sending POST/GET-request, you must specify request parameters, using a simple JavaScript object.  
@@ -78,16 +79,16 @@ function chooseFile() {
 function uploadFile(files) {
   if (!fp.isEmpty()) {
     var params = {
-		  url: '/uploadFile',
+      url: '/uploadFile',
       method: 'POST',
       data: {msg: "Catch this file!"},
       file: files,
       success: onSuccess
-		};
-		XmlRequest(params);
+    };
+    XmlRequest(params);
   } else {
-	  console.error('File not found!');
-	}
+    console.error('File not found!');
+  }
 }
 
 function onSuccess(data) {
