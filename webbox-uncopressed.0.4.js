@@ -1,5 +1,5 @@
 /**
- * WEBBOX-AJAX. V0.0.3
+ * WEBBOX-AJAX. V0.0.4
  */
 var delTimer = null;
 var paramsInfo = {
@@ -30,7 +30,7 @@ var paramsInfo = {
 var requestTypes = {
     json: "application/json;charset=UTF-8",
     file: "multipart/form-data"
-}
+};
 
 /**
  * Sends request to the server with Data-object.
@@ -45,7 +45,7 @@ function XmlRequest(params, callback) {
         return;
     }
 
-    // Check All parametrs from params
+    // Check All parameters from params
     for (var paramInf in paramsInfo) {
         try {
             if (params[paramInf] === undefined) {
@@ -107,10 +107,18 @@ function XmlRequest(params, callback) {
                 params.error(xhr.status, xhr.statusText);
             }
         } else {
-            var result_object = {
-                status: xhr.status,
-                response: JSON.parse(xhr.responseText)
-            };
+        	var result_object = {};
+        	try {
+        		result_object = {
+                	status: xhr.status,
+                	response: JSON.parse(xhr.responseText)
+            	};
+        	} catch (e) {
+				result_object = {
+                	status: xhr.status,
+                	response: xhr.responseText
+            	};
+        	}
             // console.log(result_object);
             params.success(result_object);
         }
@@ -167,7 +175,7 @@ function filePicker (multiple) {
     picker.style.top = 0;
     picker.style.marginTop = "-40px";
     picker.style.opacity = "0";
-    document.body.appendChild(picker);
+    document.getElementsByTagName('html')[0].appendChild(picker);
 }
 
 /**
