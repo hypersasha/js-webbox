@@ -11,7 +11,7 @@ You can add jsWebBox to your project, using \<script> tag in your \<head>:
 ```HTML
 <head>
   <!--- jsWebbox /-->
-  <script type="text/javascript" src="javascripts/webbox-uncopressed.0.2.js"></script>
+  <script type="text/javascript" src="javascripts/webbox-uncopressed.0.4.js"></script>
 </head>
 ```
 
