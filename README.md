@@ -11,10 +11,9 @@ You can add jsWebBox to your project, using \<script> tag in your \<head>:
 ```HTML
 <head>
   <!--- jsWebbox /-->
-  <script type="text/javascript" src="https://raw.githubusercontent.com/hypersasha/js-webbox/master/webbox-uncopressed.0.2.js"></script>
+  <script type="text/javascript" src="javascripts/webbox-uncopressed.0.2.js"></script>
 </head>
 ```
-Or just download compressed or uncompressed version from this repository.
 
 ## Sending POST/GET-requests
 Before sending POST/GET-request, you must specify request parameters, using a simple JavaScript object.  
