@@ -55,7 +55,7 @@ Just look at example below.
 <html>
 <head>
   <title>Index</title>
-  <script type="text/javascript" src="js/webbox-uncopressed.0.2.js"></script>
+  <script type="text/javascript" src="js/webbox-uncopressed.0.5.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
