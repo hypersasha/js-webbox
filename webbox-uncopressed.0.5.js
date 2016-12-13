@@ -62,6 +62,9 @@ function XmlRequest(params, callback) {
             }
         } catch (err) {
             console.error(err);
+            if (typeof params.error == "function") {
+                params.error(err);
+            }
             return;
         }
     }
@@ -77,6 +80,9 @@ function XmlRequest(params, callback) {
         }
     } catch (err) {
         console.error(err);
+        if (typeof params.error == "function") {
+            params.error(err);
+        }
         return;
     }
 
@@ -150,6 +156,9 @@ function XmlRequest(params, callback) {
                 throw new Error("Bad file given!");
         } catch (e) {
             console.error(e.stack);
+            if (typeof params.error == "function") {
+                params.error(e);
+            }
             return;
         }
         for (var i = 0; i < params.file.length; i++) {
