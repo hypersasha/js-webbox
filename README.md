@@ -3,7 +3,7 @@
 Webbox JavaScript module. See original webbox [here](https://github.com/hypersasha/npm-webbox).
 
 ### Version
-Current version of jsWebBox is 0.0.4 (Alpha)
+Current version of jsWebBox is 0.0.5 (Alpha)
 
 ## Installing
 You can add jsWebBox to your project, using \<script> tag in your \<head>:
