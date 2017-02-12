@@ -1,0 +1,18 @@
+{
+  "name": "js-webbox",
+  "homepage": "https://github.com/hypersasha/js-webbox",
+  "version": "0.0.5",
+  "authors": [
+    "star.cat"
+  ],
+  "description": "A simple support module for npm WebBox.",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
